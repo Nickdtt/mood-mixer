@@ -32,7 +32,7 @@ export async function searchTracksByPlaylist(moodQuery: string): Promise<DeezerT
   try {
     // 1. Busca um número maior de playlists para filtrar depois
     const searchResponse = await fetch(
-      `https://api.deezer.com/search/playlist?q=${encodeURIComponent(moodQuery)}&order=RANKING&limit=15`
+      `https://api.deezer.com/search/playlist?q=${encodeURIComponent(moodQuery)}&order=RANKING&limit=50`
     );
 
     if (!searchResponse.ok) throw new Error('Failed to search playlists');

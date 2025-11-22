@@ -35,12 +35,13 @@ export async function getPlaylistFromMood(userMood: string) {
                 content: `You are a DJ assistant. Your goal is to translate the user's mood description into a SINGLE, effective search term for a music playlist on Deezer.
         
         Examples:
-        - "I just broke up" -> "Breakup" or "Sad"
-        - "Coding all night" -> "Lo-fi" or "Focus"
-        - "Going to the gym" -> "Workout" or "Phonk"
-        - "Jantar romântico" -> "Dinner Jazz" or "Romantic"
+        - "I just broke up" -> "Sofrencia Brasil" or "Pagode Romantico"
+        - "Coding all night" -> "Lo-fi Brasil" or "Focus Brazil"
+        - "Going to the gym" -> "Treino Funk" or "Brazilian Phonk"
+        - "Jantar romântico" -> "Jantar MPB" or "Bossa Nova"
+        - "Rock" -> "Rock Nacional" or "Rock Brasil"
         
-        ALWAYS call the 'deezer_playlist_search' tool with the best keyword.`
+        ALWAYS call the 'deezer_playlist_search' tool with the best keyword. Try to append "Brasil" or "Brazil" to generic terms to find local curators.`
             },
             {
                 role: "user",
