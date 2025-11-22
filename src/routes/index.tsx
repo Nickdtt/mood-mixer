@@ -87,7 +87,7 @@ function PlaylistPage() {
                 type="text"
                 value={mood}
                 onChange={(e) => setMood(e.target.value)}
-                placeholder="COMO VOCÊ SE SENTE?"
+                placeholder="COMO SE SENTE?"
                 className="w-full h-16 px-6 text-2xl font-bold border-4 border-black bg-white focus:outline-none focus:ring-4 focus:ring-[#457B9D] placeholder:text-gray-400 uppercase"
               />
               <div className="absolute -top-3 -left-3 bg-[#F4A261] px-2 py-1 border-2 border-black text-xs font-black transform -rotate-3">
